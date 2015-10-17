@@ -141,7 +141,6 @@ ul.dropdown-menu li a:hover {
 #footer {
   background: #34495e;
   padding: 20px 0 10px 0;
-  margin-top: 50px;
   text-align: center;
   color: #eee;
   bottom: 0px;
@@ -228,43 +227,40 @@ div#about-me h1 {
 
 /******************************************* Portfolio / Slick *************************************/
 
-.slick-prev:before, .slick-next:before{
-  color: rgba(255,255,255,.8);
+
+
+#portfolio .col-md-4 {
+  padding: 15px;
 }
 
-.caption {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.5em;
-  padding-top:10px;
+.project-title {
+  color: rgba(255,255,255,.8)
 }
 
-.slick-dots li button:before {
-  font-size: 10px;
+.project-tools {
+  color: rgba(255,255,255,.6)
+}
+
+.project-summary {
+  color: rgba(255,255,255,.4)
 }
 
 img.portfolio {
+  border: 1px solid #000;
   box-shadow: 2px 2px 8px #000;
-  width: 50%;
-  height: 50%;
+  width: 100%;
   zoom: 0.75; -moz-transform: scale(0.75); -moz-transform-origin: 0 0; 
 }
 
 img.portfolio:hover {
-  box-shadow: 1px 0px 20px #000;
+  border: 1px solid #000;
+  box-shadow: none;
   transition: box-shadow .2s;
   -moz-transition: box-shadow .2s; /* Firefox 4 */
   -webkit-transition: box-shadow .2s; /* Safari and Chrome */
   -o-transition: box-shadow .2s; /* Opera */
 }
 
-.slick-slide img {
-  display: inline;
-}
-
-div.slick-slide {
-  margin-top: 20px;
-  box-shadow: none;
-}
 
 div#portfolio h1, div#portfolio h2 {
   color: rgba(255,255,255,.8);
@@ -299,27 +295,6 @@ div#portfolio h1, div#portfolio h2 {
 .classes ul a:hover {
   color: #000;
   text-decoration: none;
-}
-
-
-
-
-
-/************************************************** Form *****************************************/
-
-.form-control {
-  width: 300px;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#comment {
-  height: 200px;
-}
-
-div#contact h1, div#contact p, div#contact a {
-  color: rgba(255,255,255,.8);
 }
 
 
