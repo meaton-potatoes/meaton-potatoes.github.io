@@ -41,17 +41,5 @@ $(document).ready(function(){
 	});
 
 
-
-	$('.portfolio-slick').slick({
-		infinite: true,
-		slidesToShow: 1,
-		dots: true,
-		arrows: true,
-		autoplay: true,
-		accessibility: true,
-		respondTo: ".container"
-	});
-
-
 	$('.parallax-window').parallax({imageSrc: 'img/laptop.jpg'});
 });
