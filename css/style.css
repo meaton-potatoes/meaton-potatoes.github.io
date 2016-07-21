@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  background-color: whitesmoke;
+}
+
+header {
+  position: fixed;
+  width: 98%;
+  padding: 10px 1%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #000;
+  background-color: #fff;
+}
+
+header a {
+  color: #000;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: teal;
+}
+
+.logo {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.menu {
+  padding-top: 5px;
+  font-size: 1.1em;
+}
+
+.menu a {
+  padding: 10px;
+}
+
+.parallax-window {
+  background-color: rgba(255,255,255,.25);
+  height: 400px;
+  background-position: bottom;
+  border-bottom: 2px solid red;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+.top-social {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.top-social a {
+  color: #000;
+  padding: 10px;
+}
+
+.top-social a:hover {
+  color: red;
+}
+
+#about-me {
+  padding: 50px 0;
+  vertical-align: middle;
+}
+
+#about-me h1 {
+  text-align: center;
+}
+
+.me {
+  border-radius: 100%;
+  border: 2px solid #000;
+  height: 300px;
+}
+
+.profile-image {
+  margin: 30px;
+  float: right;
+  border-radius: 100%;
+}
+
+a:hover {
+  transition: color 0.3s ease;
+}
+
+.description a {
+  color: teal;
+}
+
+.description a:hover {
+  color: black;
+}
+
+#portfolio {
+  padding: 50px 0;
+  text-align: center;
+}
+
+#portfolio .row {
+  display: flex;
+  justify-content: center;
+}
+
+#portfolio img {
+  border: 1px solid #000;
+  margin: 10px;
+  height: 180px;
+}
+
+#portfolio img:hover {
+  box-shadow: 0 0 5px gray;
+}
+
+#portfolio h3 {
+  color: teal;
+  margin: 5px;
+}
+
+#portfolio h4 {
+  margin: 5px;
+}
+
+#portfolio h5 {
+  margin: 5px;
+}
+
+footer {
+  background: teal;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  padding: 20px 0;
+  color: #fff;
+}
+
+footer a {
+  padding: 5px;
+  color: whitesmoke;
+}
+
+footer a:hover {
+  color: #000;
+}
+
+footer p {
+  margin: 0;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 128, 128, 0.75), rgba(0, 0, 0, 0));
+}
