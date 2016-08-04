@@ -6,7 +6,7 @@ body {
   background-color: darkgray;
 }
 
-header, .sticky-header {
+header {
   width: 98%;
   padding: 10px 1%;
   display: flex;
@@ -22,7 +22,6 @@ header, .sticky-header {
   right: 0;
   z-index: -1000;
   background-color: lightgray;
-  transition: z-index 0.4s ease;
 }
 
 .sticky-header a {
@@ -63,7 +62,6 @@ header a:hover {
 }
 
 .parallax-window {
-  /*background-color: rgba(255,255,255,.25);*/
   min-height: 100%;
   background-position: bottom;
   border-bottom: 2px solid #000;
@@ -76,8 +74,12 @@ header a:hover {
 }
 
 /* Thank you http://codepen.io/diegopardo/pen/ohInj for cool .headline h1! */
+.headline h1 {
+  padding-top: 100px;
+}
+
 .headline h1, .headline h2 {
-  margin-top: 100px;
+  margin-top: 0;
   margin-bottom: 25px;
   font-size: 6em;
   text-align: center;
@@ -87,7 +89,6 @@ header a:hover {
   letter-spacing: 0.1em;
   text-shadow:
     0 0 3px mintcream,
-
     -1px 0 0 rgb(238, 238, 238),
     0 -1px 0 rgb(238, 238, 238),
     -2px -2px 2px rgba(0,0,0,0.3),
@@ -107,7 +108,6 @@ header a:hover {
   margin-top: 25px;
   margin-bottom: 100px;
 }
-
 
 .container {
   width: 60%;

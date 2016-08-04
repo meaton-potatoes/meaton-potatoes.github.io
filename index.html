@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="parallax-window" data-parallax="scroll" data-image-src="./img/space.jpg">
-      <header>
+      <header class="sticky-header">
         <h1 class="logo"><a href="/">Melissa Eaton | Software Developer</a></h1>
         <span class="menu">
           <a href="#about-me">About</a>
@@ -20,14 +20,6 @@
           <a href="http://meaton3.wordpress.com/" target="_blank">Blog</a>
         </span>
       </header>
-      <div class="sticky-header">
-        <h1 class="logo"><a href="/">Melissa Eaton | Software Developer</a></h1>
-        <span class="menu">
-          <a href="#about-me">About</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="http://meaton3.wordpress.com/" target="_blank">Blog</a>
-        </span>
-      </div>
       <div class="headline">
         <h1>Melissa Eaton</h1>
         <h2>Software Developer</h2>
@@ -212,7 +204,7 @@
 
       window.addEventListener("scroll", function(){
         var stickyHeader = document.querySelector('.sticky-header');
-        if (window.pageYOffset > 350) {
+        if (window.pageYOffset > 400) {
           if (!stickyHeader.className.includes("sticky-header-visible")) {
             stickyHeader.classList.add("sticky-header-visible");
           }
