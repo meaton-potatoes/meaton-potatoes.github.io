@@ -3,7 +3,7 @@ body {
   padding: 0;
   width: 100%;
   font-family: 'Lato', sans-serif;
-  background-color: gray;
+  background-color: darkgray;
 }
 
 header, .sticky-header {
@@ -21,7 +21,7 @@ header, .sticky-header {
   left: 0;
   right: 0;
   z-index: -1000;
-  background-color: darkgray;
+  background-color: lightgray;
   transition: z-index 0.4s ease;
 }
 
