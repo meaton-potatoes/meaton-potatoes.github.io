@@ -3,26 +3,25 @@ body {
   padding: 0;
   width: 100%;
   font-family: 'Lato', sans-serif;
-  background-color: whitesmoke;
+  background-color: darkgray;
 }
 
 header {
-  position: fixed;
   width: 98%;
   padding: 10px 1%;
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid #000;
-  background-color: #fff;
+  background-color: rgba(255,255,255,.2);
 }
 
 header a {
-  color: #000;
+  color: mintcream;
   text-decoration: none;
 }
 
 header a:hover {
-  color: teal;
+  color: darkgray;
 }
 
 .logo {
@@ -40,11 +39,51 @@ header a:hover {
 }
 
 .parallax-window {
-  background-color: rgba(255,255,255,.25);
-  height: 400px;
+  /*background-color: rgba(255,255,255,.25);*/
+  min-height: 100%;
   background-position: bottom;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #000;
 }
+
+.headline {
+  width: 60%;
+  margin: auto;
+  color: mintcream;
+}
+
+/* Thank you http://codepen.io/diegopardo/pen/ohInj for cool .headline h1! */
+.headline h1, .headline h2 {
+  margin-top: 100px;
+  margin-bottom: 25px;
+  font-size: 6em;
+  text-align: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: transparent;
+  letter-spacing: 0.1em;
+  text-shadow:
+    0 0 3px mintcream,
+
+    -1px 0 0 rgb(238, 238, 238),
+    0 -1px 0 rgb(238, 238, 238),
+    -2px -2px 2px rgba(0,0,0,0.3),
+    1px -2px 2px rgba(0,0,0,0.3),
+    -2px 1px 2px rgba(0,0,0,0.3),
+    1px 1px 4px rgba(0,0,0,0.5),
+    2px 4px 6px rgba(0,0,0,0.4),
+    4px 6px 12px rgba(0,0,0,0.1),
+    6px 8px 12px rgba(0,0,0,0.1),
+    8px 10px 18px rgba(0,0,0,0.2),
+    10px 15px 25px rgba(0,0,0,0.2),
+    10px 15px 35px rgba(0,0,0,0.2);
+}
+
+.headline h2 {
+  font-size: 3em;
+  margin-top: 25px;
+  margin-bottom: 100px;
+}
+
 
 .container {
   width: 60%;
@@ -66,24 +105,55 @@ header a:hover {
 }
 
 #about-me {
-  padding: 50px 0;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 10px 0;
   vertical-align: middle;
+  color: #000;
 }
 
 #about-me h1 {
   text-align: center;
 }
 
+#about-me a {
+  color: #000;
+}
+
+#about-me a:hover {
+  color: rgb(	75, 0, 130);
+}
+
 .me {
-  border-radius: 100%;
+  border-radius: 50%;
   border: 2px solid #000;
-  height: 300px;
+  height: 350px;
 }
 
 .profile-image {
-  margin: 30px;
+  margin: 10px;
   float: right;
-  border-radius: 100%;
+  border-radius: 50%;
+  opacity: .9;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom-skills {
+  margin-bottom: 100px;
+}
+
+.skill svg {
+  width: 100px;
+  /*padding: 25px;*/
+}
+
+.skill h4 {
+  margin-top: 5px;
+  text-align: center;
 }
 
 a:hover {
@@ -91,7 +161,7 @@ a:hover {
 }
 
 .description a {
-  color: teal;
+  color: rgb(	75, 0, 130);
 }
 
 .description a:hover {
@@ -119,7 +189,7 @@ a:hover {
 }
 
 #portfolio h3 {
-  color: teal;
+  color: rgb(	75, 0, 130);
   margin: 5px;
 }
 
@@ -131,8 +201,16 @@ a:hover {
   margin: 5px;
 }
 
+#skill-list {
+  margin-top: 50px;
+}
+
+#skill-list h1 {
+  text-align: center
+}
+
 footer {
-  background: teal;
+  border-top: 2px solid #000;
   width: 100%;
   text-align: center;
   bottom: 0;
@@ -156,5 +234,5 @@ footer p {
 hr {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 128, 128, 0.75), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(	75, 0, 130, 0.75), rgba(0, 0, 0, 0));
 }
