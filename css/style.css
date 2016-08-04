@@ -9,8 +9,6 @@ body {
 header {
   width: 98%;
   padding: 10px 1%;
-  display: flex;
-  justify-content: space-between;
   border-bottom: 2px solid #000;
   background-color: rgba(255,255,255,.2);
 }
@@ -20,7 +18,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: -1000;
+  display: none;
   background-color: lightgray;
 }
 
@@ -34,7 +32,9 @@ header {
 }
 
 .sticky-header-visible {
-  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
 }
 
 header a {
@@ -81,7 +81,7 @@ header a:hover {
 .headline h1, .headline h2 {
   margin-top: 0;
   margin-bottom: 25px;
-  font-size: 6em;
+  font-size: 5em;
   text-align: center;
   text-align: center;
   text-transform: uppercase;
@@ -138,6 +138,7 @@ header a:hover {
 
 #about-me h1 {
   text-align: center;
+  z-index: 1;
 }
 
 #about-me a {
@@ -207,7 +208,8 @@ a:hover {
 #portfolio img {
   border: 1px solid #000;
   margin: 10px;
-  height: 180px;
+  height: 200px;
+  width: 375px;
 }
 
 #portfolio img:hover {
@@ -261,4 +263,63 @@ hr {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0,128,128, 0.75), rgba(0, 0, 0, 0));
+}
+
+@media only screen and (max-width: 1200px) {
+  .headline h1 {
+    font-size: 4em;
+    }
+
+    .headline h2 {
+      font-size: 2.5em;
+    }
+
+    #portfolio img {
+      height: 150px;
+      width: 280px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .headline {
+      width: 100%;
+    }
+
+    .headline h1 {
+      font-size: 2.5em;
+    }
+
+    .headline h2 {
+      font-size: 1.5em;
+    }
+
+    .container {
+      width: 90%;
+      padding: 5%;
+    }
+
+    #portfolio .row {
+      flex-direction: column;
+    }
+
+    #portfolio img {
+      height: 200px;
+      width: 375px;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+  .logo {
+    font-size: 1em;
+  }
+
+  .menu {
+    font-size: .75em;
+  }
+
+  .menu a {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
 }
