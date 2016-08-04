@@ -20,6 +20,14 @@
           <a href="http://meaton3.wordpress.com/" target="_blank">Blog</a>
         </span>
       </header>
+      <div class="sticky-header">
+        <h1 class="logo"><a href="/">Melissa Eaton | Software Developer</a></h1>
+        <span class="menu">
+          <a href="#about-me">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="http://meaton3.wordpress.com/" target="_blank">Blog</a>
+        </span>
+      </div>
       <div class="headline">
         <h1>Melissa Eaton</h1>
         <h2>Software Developer</h2>
@@ -201,6 +209,21 @@
     </div>
 
     <script>
+
+      window.addEventListener("scroll", function(){
+        var stickyHeader = document.querySelector('.sticky-header');
+        if (window.pageYOffset > 350) {
+          if (!stickyHeader.className.includes("sticky-header-visible")) {
+            stickyHeader.classList.add("sticky-header-visible");
+          }
+        } else {
+          if (stickyHeader.className.includes("sticky-header-visible")){
+            stickyHeader.classList.remove("sticky-header-visible");
+          }
+        }
+      });
+
+
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

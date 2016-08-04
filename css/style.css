@@ -3,16 +3,39 @@ body {
   padding: 0;
   width: 100%;
   font-family: 'Lato', sans-serif;
-  background-color: darkgray;
+  background-color: gray;
 }
 
-header {
+header, .sticky-header {
   width: 98%;
   padding: 10px 1%;
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid #000;
   background-color: rgba(255,255,255,.2);
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1000;
+  background-color: darkgray;
+  transition: z-index 0.4s ease;
+}
+
+.sticky-header a {
+  text-decoration: none;
+  color: #000;
+}
+
+.sticky-header a:hover {
+  color: rgb(	75, 0, 130);
+}
+
+.sticky-header-visible {
+  z-index: 100;
 }
 
 header a {
@@ -23,6 +46,7 @@ header a {
 header a:hover {
   color: darkgray;
 }
+
 
 .logo {
   font-size: 1.5em;
@@ -117,6 +141,8 @@ header a:hover {
 }
 
 #about-me a {
+  text-decoration: none;
+  font-weight: bold;
   color: #000;
 }
 
@@ -189,7 +215,7 @@ a:hover {
 }
 
 #portfolio h3 {
-  color: rgb(	75, 0, 130);
+  color: #000;
   margin: 5px;
 }
 
@@ -224,7 +250,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #000;
+  color: rgb(	75, 0, 130);
 }
 
 footer p {
@@ -234,5 +260,5 @@ footer p {
 hr {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(	75, 0, 130, 0.75), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0,128,128, 0.75), rgba(0, 0, 0, 0));
 }
