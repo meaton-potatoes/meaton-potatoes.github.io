@@ -1551,7 +1551,7 @@ x@import url("font-awesome.min.css");
 /* Basic */
 
 	body {
-		background: darkgray;
+		background: lightgray;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1994,13 +1994,12 @@ x@import url("font-awesome.min.css");
 			-webkit-transition: opacity 0.2s ease-in-out;
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
-			background: url("images/overlay.png");
 			border-radius: 0.35em;
 			content: '';
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.5;
+			opacity: 0.3;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -2040,7 +2039,7 @@ x@import url("font-awesome.min.css");
 
 			.image.thumb:hover:before {
 				background: url("../../images/fulls/05.jpg");
-				opacity: .5;
+				opacity: .3;
 			}
 
 		.image img {
