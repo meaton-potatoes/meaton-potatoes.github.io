@@ -2005,6 +2005,25 @@ x@import url("font-awesome.min.css");
 			width: 100%;
 		}
 
+    .overflow-size {
+      height: 150px;
+      overflow: hidden;
+      border-radius: 4px;
+      /*border-bottom: 1px solid #000;*/
+    }
+
+    .gray {
+      -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+      filter: grayscale(100%);
+    }
+
+    .gray:hover {
+      -webkit-filter: none;
+      filter: none;
+      -webkit-transition: .6s ease-in-out;
+      transition: .6s ease-in-out;
+    }
+
 		.image.thumb {
 			text-align: center;
 		}
