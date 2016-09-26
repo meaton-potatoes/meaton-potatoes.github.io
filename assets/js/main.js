@@ -1,7 +1,7 @@
-$("document").ready(()=>{
+$("document").ready(function(){
   $("figcaption").on("click", function(){
-    let url = $(this).attr("data");
-    let newWindow = window.open(url, "_blank");
+    var url = $(this).attr("data");
+    var newWindow = window.open(url, "_blank");
     newWindow.focus()
   })
 });
