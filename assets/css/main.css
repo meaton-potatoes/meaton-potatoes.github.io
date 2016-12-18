@@ -1,133 +1,80 @@
 body {
-  background: mintcream;
   margin: 0;
   padding: 0;
-  font-family: 'Pompiere', sans-serif;
-}
-
-.container {
-  width: 70%;
-  height: 100%;
-  margin: 0 auto;
   text-align: center;
+  font-family: 'Istok Web', sans-serif;
 }
 
-.flex {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+#overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .1;
+  z-index: -1;
 }
 
-#section-1 {
-  background: url("../img/space-bg.jpg");
-  width: 100%;
-  padding: 150px 0 200px 0;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  color: white;
+h1, h3, h5 {
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px #000;
+  margin: 0;
 }
 
-#section-1 h1 {
-  font-size: 4em;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-#section-1 h2 {
-  font-size: 3em;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.fake-button {
+h1, h3 {
   display: inline-block;
-  font-size: 20px;
-  background: transparent;
-  border-radius: 4px;
-  padding: 10px;
-  margin: 10px;
-  color: #fff;
-  border: 1px solid #fff;
-  text-decoration: none;
-}
-
-.fake-button:hover {
-  cursor: pointer;
-  color: #000;
-  background: rgba(255, 255, 255, .8);
-}
-
-
-
-
-figure {
-  border-radius: 4px;
-  height: 200px;
-  width: 300px;
-  background-size: cover;
-  background-position: center;
-  padding: 20px;
-  margin: 40px;
-  border: 1px solid #000;
-}
-
-figcaption {
-  border-radius: 4px;
-  position: relative;
-  top: 200px;
-  font-size: 2em;
-  padding: 10px;
-  background-image: url("../img/dark-pattern-bg.png");
-  border: 1px solid #fff;
-  color: #fff;
-}
-
-figcaption:hover {
-  background: #000;
-  cursor: pointer;
-}
-
-
-#section-3 {
-  padding: 150px 0;
-  color: #fff;
-  background: url("../img/dark-pattern-bg.png");
-  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 15%, 0 0);
-  clip-path: polygon(0 100%, 100% 100%, 100% 15%, 0 0);
-}
-
-#section-3 img {
-  height: 300px;
-  border-radius: 100%;
-  position: relative;
 }
 
 h1 {
-  font-size: 3em;
+  margin-top: 100px;
+  margin-bottom: 15px;
 }
 
-h3 {
-  font-size: 2em;
+hr {
+  border: 0;
+  width: 50%;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, transparent, #fff, transparent);
+  background-image: -moz-linear-gradient(left, transparent, #fff, transparent);
+  background-image: -ms-linear-gradient(left, transparent, #fff, transparent);
+  background-image: -o-linear-gradient(left, transparent, #fff, transparent);
 }
 
-p {
-  font-family: Helvetica;
+#social {
+  margin: 25px 0 100px 0;
 }
 
-
-
-footer {
-  background-image: url("../img/space-bg.jpg");
-  text-align: center;
-  padding: 75px 15%;
-}
-
-i {
+#social a {
   color: #fff;
-  margin: 10px;
+  margin: 0 5px;
+  -webkit-transition: color .5s;
+  transition: color .5s;
 }
 
-i:hover {
-  color: turquoise;
+#social a:hover {
+  color: gray;
+}
+
+.slick {
+  width: 75%;
+  margin: auto;
+}
+
+.slick-dots li button:before {
+  opacity: .5;
+  color: #fff;
+}
+
+.slick-dots li.slick-active button:before
+{
+  opacity: 1;
+  color: #fff;
+}
+
+.project {
+  width: 300px;
+  height: 200px;
+  border-radius: 4px;
+  border: 1px solid #000;
 }
