@@ -1,12 +1,11 @@
 $(document).ready(function(){
   backgrounds = [
-      "jgoerugd_y4-john-towner.jpg",
-      "_q5h19c-vwu-fineas-anton.jpg",
-      "a3owknpciq8-alexandre-chambon.jpg",
-      "dksk8szlrn0-sora-sagano.jpg",
-      "fhxp17axoek-arto-marttinen.jpg",
-      "lvdnluaci18-guy-bowden.jpg",
-      "rf5sv5dv1zc-arto-marttinen.jpg"
+      "http://i.imgur.com/tQIjWF3.jpg",
+      "http://imgur.com/kPuBhgg.jpg",
+      "http://imgur.com/8JAYQLn.jpg",
+      "http://imgur.com/ErPzOe4.jpg",
+      "http://imgur.com/wjdurOK.jpg",
+      "http://imgur.com/Yaq5qQQ.jpg"
   ]
   overlays = [
       "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cGF0aCBkPSJNLTIgMTBMMTAgLTJaTTEwIDZMNiAxMFpNLTIgMkwyIC0yIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNC41Ij48L3BhdGg+Cjwvc3ZnPg==",
@@ -17,8 +16,11 @@ $(document).ready(function(){
   overlay = overlays[Math.floor(overlays.length * Math.random())]
 
   $("body").css({
-    "background": "url('./assets/img/" + background + "')",
-    "background-size": "cover"
+      "background": "url('" + background + "') no-repeat center center fixed",
+      "-webkit-background-size": "cover",
+      "-moz-background-size": "cover",
+      "-o-background-size": "cover",
+      "background-size": "cover"
   });
 
   $("#overlay").css("background", "url('" + overlay + "')")
