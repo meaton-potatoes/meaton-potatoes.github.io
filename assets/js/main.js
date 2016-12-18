@@ -27,6 +27,7 @@ $(document).ready(function(){
 });
 
 $('.slick').slick({
+    lazyLoad: 'ondemand',
     dots: true,
     infinite: true,
     speed: 1000,
